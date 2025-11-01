@@ -12,6 +12,7 @@ import "dotenv/config";
 import cors from "cors";
 
 //Conexión a mongo:
+//URL_Mongo=mongodb+srv://admin:Sxdc2208@clusterinspt.gvodtbv.mongodb.net/?appName=ClusterINSPT
 const URL_Mongo = process.env.URL_Mongo;
 mongoose.connect(URL_Mongo,{
     useNewUrlParser: true,
@@ -30,6 +31,7 @@ db.once('open', ()=>{
 const app = express();
 
 //Configuración del puerto:
+// PORT=3000
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, '0.0.0.0', ()=>{
     console.log(`Escuchando en http://localhost:${PORT}`);
