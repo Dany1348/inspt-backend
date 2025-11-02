@@ -62,3 +62,9 @@ app.put('/products/update/:id', updateProduct);
 app.delete('/products/delete/:id', deleteProduct);
 
 
+
+
+// borramos el seteo de la url
+
+
+
