@@ -3,9 +3,13 @@ import User from './user.js';
 
 // Obtener todos los usuarios
 export const getUsers = async (req, res) => {
+    //console.log(" paso por el getUsers");
     try {
         const users = await User.find();
+        //console.log(" paso por el find");
         res.json(users);
+        //console.log(" paso por el json");
+        console.log(users);   
     } catch (err) {
         res.status(500).json({ message: err.message });
     }

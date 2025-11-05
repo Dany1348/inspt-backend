@@ -14,10 +14,12 @@ import cors from "cors";
 //Conexión a mongo:
 //URL_Mongo=mongodb+srv://admin:Sxdc2208@clusterinspt.gvodtbv.mongodb.net/?appName=ClusterINSPT
 const URL_Mongo = process.env.URL_Mongo;
-mongoose.connect(URL_Mongo,{
+mongoose.connect(URL_Mongo
+  /*  ,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
-});
+}*/
+);
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Error al conectar con la BD: '));
@@ -50,6 +52,7 @@ app.use(express.urlencoded({ extended: false }));
 
 //Rutas CRUD:
 app.get('/users/all', getUsers);
+app.get('/personas/all', getUsers);
 app.post('/users/create', createUser);
 app.get('/users/find/:dni', getUserByDNI);
 app.put('/users/update/:dni', updateUser);
