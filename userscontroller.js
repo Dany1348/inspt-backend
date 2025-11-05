@@ -18,9 +18,14 @@ export const getUsers = async (req, res) => {
 // Crear un nuevo usuario
 export const createUser = async (req, res) => {
     const user = new User({
-        dni: req.body.dni,
+      /*  dni: req.body.dni,
         nombre: req.body.nombre,
         apellido: req.body.apellido,
+        correo: req.body.correo,*/
+        dni: req.body.dni,
+        nombre: req.body.nombre,
+        password: req.body.password,
+        rol: req.body.rol,
         correo: req.body.correo,
     });
 
@@ -52,9 +57,14 @@ export const updateUser = async (req, res) => {
             { dni: req.params.dni },
             {
                 $set: {
-                    dni: req.body.dni,
+                    /*dni: req.body.dni,
                     nombre: req.body.nombre,
                     apellido: req.body.apellido,
+                    correo: req.body.correo,*/
+                    dni: req.body.dni,
+                    nombre: req.body.nombre,
+                    password: req.body.password,
+                    rol: req.body.rol,
                     correo: req.body.correo,
                 },
             },
@@ -69,7 +79,7 @@ export const updateUser = async (req, res) => {
 // Eliminar un usuario por su DNI
 export const deleteUser = async (req, res) => {
     try {
-        await User.findOneAndRemove({ dni: req.params.dni });
+        await User.findOneAndDelete({ dni: req.params.dni });
         res.json({ message: 'Usuario eliminado' });
     } catch (err) {
         res.status(500).json({ message: err.message });
