@@ -17,6 +17,8 @@ export const createProduct = async (req, res) => {
         id: req.body.id,
         nombre: req.body.nombre,
         precio: req.body.precio,
+        imagen: req.body.imagen,
+        categoria: req.body.categoria,
         descripcion: req.body.descripcion,
     });
 
@@ -48,9 +50,15 @@ export const updateProduct = async (req, res) => {
             { id: req.params.id },
             {
                 $set: {
+                   /* id: req.body.id,
+                    nombre: req.body.nombre,
+                    precio: req.body.precio,
+                    descripcion: req.body.descripcion,*/
                     id: req.body.id,
                     nombre: req.body.nombre,
                     precio: req.body.precio,
+                    imagen: req.body.imagen,
+                    categoria: req.body.categoria,
                     descripcion: req.body.descripcion,
                 },
             },
@@ -65,7 +73,7 @@ export const updateProduct = async (req, res) => {
 // Eliminar un producto por su id
 export const deleteProduct = async (req, res) => {
     try {
-        await Product.findOneAndRemove({ id: req.params.id });
+        await Product.findOneAndDelete({ id: req.params.id });
         res.json({ message: 'Producto eliminado' });
     } catch (err) {
         res.status(500).json({ message: err.message });

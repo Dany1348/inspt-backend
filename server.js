@@ -41,6 +41,7 @@ app.listen(PORT, '0.0.0.0', ()=>{
 
 app.use(cors({
     //origin: "http://localhost:PORT";
+    origin : "http://localhost:5173"
 }));
 
 app.get('/', (req,res)=>{
