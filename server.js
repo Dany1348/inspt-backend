@@ -3,7 +3,7 @@ import express from "express";
 
 import mongoose from "mongoose";
 
-import {getUsers ,createUser,deleteUser,updateUser, getUserByDNI} from './userscontroller.js';
+import {getUsers ,createUser,deleteUser,updateUser, getUserByDNI, getLogin} from './userscontroller.js';
 import { getProducts , createProduct ,getProductById,updateProduct ,deleteProduct} from './productscontroller.js';
 //const  = require('./userscontroller.js');
 //import productController from './productscontroller.js';
@@ -58,6 +58,8 @@ app.post('/users/create', createUser);
 app.get('/users/find/:dni', getUserByDNI);
 app.put('/users/update/:dni', updateUser);
 app.delete('/users/delete/:dni', deleteUser);
+app.get('/users/login/:dni', getLogin);
+app.post('/users/login/:dni', getLogin);
 
 app.get('/products/all', getProducts);
 app.post('/products/create', createProduct);
