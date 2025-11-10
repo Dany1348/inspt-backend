@@ -97,7 +97,8 @@ export const deleteUser = async (req, res) => {
 export const getLogin = async (req, res) => {
     let {dni , password} = req.body;
     try {
-        const user = await User.findOne({ dni: req.params.dni });
+        //const user = await User.findOne({ dni: req.params.dni });
+        const user = await User.findOne({dni: dni});       
         console.log( " Pasamos por aca");
         
         let saved = user.password;
