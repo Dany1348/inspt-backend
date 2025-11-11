@@ -1,0 +1,25 @@
+[
+    {"dni":"admin",
+    "nombre":"admin",
+    "password":"1234",
+    "rol":"admin",
+    "correo":"admin@gmail.com"},
+    
+    {"dni":"1",
+    "nombre":"Galileo",
+    "password":"$2b$08$qDHr2Ckp5TZVyDkLs7I82uXhpeOvKSA2e4wzW3BwBCv12GA7YdyEW",
+    "rol":"vendedor",
+    "correo":"galilei@gmail.com"},
+    
+    {"dni":"2",
+    "nombre":"Nicolas",
+    "password":"$2b$08$Jza7kKcwdSWHo2Ikj0U78eK7ycwy4.pkk4yi0cUXi3VP3usiJrn3y",
+    "rol":"vendedor",
+    "correo":"copernico@gmail.com"},
+    
+    {"dni":"3",
+    "nombre":"Michael",
+    "password":"$2b$08$hiavD4qxAVuKOaNbCoU8V.R8PImWOT/kWzEjxhnvnlvgNyI8elYee",
+    "rol":"cliente",
+    "correo":"faraday@gmail.com"}
+]

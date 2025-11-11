@@ -1,0 +1,35 @@
+
+[{
+"id":"4",
+"nombre":"Monitor pc LG 20",
+"precio":200,"imagen":"/src/assets/lg20.jpeg",
+"categoria":"200",
+"descripcion":"Visualización más cómoda y definida: La resolución HD+ de 1600 x 900 en el monitor de 19.5\" ofrece imágenes nítidas y una experiencia visual optimizada. Su tecnología Flicker Safe reduce el parpadeo invisible, brindando comodidad durante largas jornadas frente a la pantalla"},
+
+{"id":"1",
+"nombre":"Galaxy - Nexus",
+"precio":4000,"imagen":"/src/assets/Galaxy.jpeg",
+"categoria":"4000",
+"descripcion":"El Samsung GALAXY Nexus es el primer smartphone en correr la nueva versión Android 4.0 Ice Cream Sandwich. Posee una pantalla curva HD Super AMOLED de 4.65 pulgadas a 1280 x 720 pixels de resolución, cámara de 5 megapixels con captura de video 1080p y \"retraso de disparo cero\", NFC, Wi-Fi, GPS, procesador dual-core a 1.2GHz, y HSPA+ o LTE dependiendo de la versión."},
+
+{"id":"2",
+"nombre":"Samsung 15.6  Laptop 3",
+"precio":8000,
+"imagen":"/src/assets/Samsung.jpg",
+"categoria":"8000",
+"descripcion":"SAMSUNG 15.6\" Galaxy Book3 Business Laptop Computer/Windows 11 PRO/16GB - 512GB/ 13th Gen Intel® Core™ i7 Processor, 2023 Model"},
+
+{"id":"3",
+"nombre":"Smartphone VR Glasses 3D Helmet",
+"precio":15,
+"imagen":"/src/assets/vr.jpeg",
+"categoria":"15",
+"descripcion":"3D Helmet Virtual Reality VR Glasses For 5 To 7 Inch Smartphones 3D Glasses Support 0-800 Myopia VR Headset For Mobile Phone 240124"},
+
+{"id":"00",
+"nombre":"Dany",
+"precio":3000,
+"imagen":"Danyel",
+"categoria":"Dany",
+"descripcion":"Dany"}
+]
