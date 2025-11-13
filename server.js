@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 
 import {getUsers ,createUser,deleteUser,updateUser, getUserByDNI, getLogin} from './userscontroller.js';
 import { getProducts , createProduct ,getProductById,updateProduct ,deleteProduct} from './productscontroller.js';
+import {getFacturas , createFactura, getFacturaById ,deleteFactura } from './facturaController.js';
 //const  = require('./userscontroller.js');
 //import productController from './productscontroller.js';
 
@@ -69,6 +70,11 @@ app.get('/products/find/:id', getProductById);
 app.put('/products/update/:id', updateProduct);
 app.delete('/products/delete/:id', deleteProduct);
 
+app.get('/facturas/all', getFacturas);
+app.post('/facturas/create', createFactura);
+app.get('/facturas/find/:id', getFacturaById);
+//app.put('/facturas/update/:id', updateProduct);
+app.delete('/facturas/delete/:id', deleteFactura);
 
 
 

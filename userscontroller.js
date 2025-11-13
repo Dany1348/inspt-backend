@@ -9,8 +9,11 @@ export const getUsers = async (req, res) => {
         const users = await User.find();
         //console.log(" paso por el find");
         res.json(users);
-        //console.log(" paso por el json");
+        //
         console.log(users);   
+        let hoy = new Date();
+        hoy = `${hoy.getDay()}/${hoy.getMonth() + 1}/${hoy.getFullYear()}`;
+        console.log(" paso por el json hoy :   ", hoy);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }

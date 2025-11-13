@@ -1,0 +1,24 @@
+[
+
+{
+        "id": "2",
+        "cliente": "2",
+        "productos": [
+            {"id":"3",
+"nombre":"Smartphone VR Glasses 3D Helmet",
+"precio":15,
+"imagen":"/src/assets/vr.jpeg",
+"categoria":"15",
+"descripcion":"3D Helmet Virtual Reality VR Glasses For 5 To 7 Inch Smartphones 3D Glasses Support 0-800 Myopia VR Headset For Mobile Phone 240124"},
+
+{"id":"2",
+"nombre":"Samsung 15.6  Laptop 3",
+"precio":8000,
+"imagen":"/src/assets/Samsung.jpg",
+"categoria":"8000",
+"descripcion":"SAMSUNG 15.6\" Galaxy Book3 Business Laptop Computer/Windows 11 PRO/16GB - 512GB/ 13th Gen Intel® Core™ i7 Processor, 2023 Model"}
+        ],
+        "total": 2000       
+    }
+
+]

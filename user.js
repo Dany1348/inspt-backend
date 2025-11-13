@@ -73,7 +73,14 @@ export default  User;
 "password": "123",
     "rol": "vendedor",
 "correo":"galilei@gmail.com"
-}
+},
+ {
+    "dni": "admin",
+    "nombre": "admin",
+    "password": "123",
+    "rol": "admin",
+    "correo": "admin@gmail.com"  
+  }
 [
   {
     "_id": "690bc9700a591d471129133b",

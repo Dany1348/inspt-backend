@@ -21,6 +21,7 @@ export const createProduct = async (req, res) => {
         imagen: req.body.imagen,
         categoria: req.body.categoria,
         descripcion: req.body.descripcion,
+        cantidad: req.body.cantidad,
     });
 
     try {
@@ -61,6 +62,7 @@ export const updateProduct = async (req, res) => {
                     imagen: req.body.imagen,
                     categoria: req.body.categoria,
                     descripcion: req.body.descripcion,
+                    cantidad: req.body.cantidad,
                 },
             },
             { new: true }
