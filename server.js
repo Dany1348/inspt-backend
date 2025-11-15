@@ -74,7 +74,7 @@ app.get('/facturas/all', getFacturas);
 app.post('/facturas/create', createFactura);
 app.get('/facturas/find/:id', getFacturaById);
 //app.put('/facturas/update/:id', updateProduct);
-app.delete('/facturas/delete/:id', deleteFactura);
+app.delete('/facturas/delete/:_id', deleteFactura);
 
 
 

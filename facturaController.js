@@ -9,7 +9,7 @@ export const getFacturas = async (req, res) => {
         console.log(facturas);
         let hoy = new Date();
         hoy = `${hoy.getDay()}/${hoy.getMonth() + 1}/${hoy.getFullYear()}`;
-        console.log(" paso por el json hoy :   ", hoy);   
+        console.log(" paso por el json hoy :   ", hoy);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
@@ -27,8 +27,11 @@ export const createFactura = async (req, res) => {
     });
 
     try {
-        const newFactura = await factura.save();
-        res.status(201).json(newFactura);
+        if (factura.total > 0) {
+            const newFactura = await factura.save();
+            res.status(201).json(newFactura);
+        }
+
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
@@ -74,7 +77,7 @@ export const updateProduct = async (req, res) => {
 // Eliminar un producto por su id
 export const deleteFactura = async (req, res) => {
     try {
-        await Factura.findOneAndDelete({ id: req.params.id });
+        await Factura.findOneAndDelete({ _id: req.params._id });
         res.json({ message: 'Factura eliminado' });
     } catch (err) {
         res.status(500).json({ message: err.message });
@@ -82,5 +85,5 @@ export const deleteFactura = async (req, res) => {
 };
 
 {
-    
+
 }
