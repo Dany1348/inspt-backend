@@ -72,7 +72,7 @@ app.delete('/products/delete/:id', deleteProduct);
 
 app.get('/facturas/all', getFacturas);
 app.post('/facturas/create', createFactura);
-app.get('/facturas/find/:id', getFacturaById);
+app.get('/facturas/find/:_id', getFacturaById);
 //app.put('/facturas/update/:id', updateProduct);
 app.delete('/facturas/delete/:_id', deleteFactura);
 

@@ -40,7 +40,7 @@ export const createFactura = async (req, res) => {
 // Obtener un producto por su id
 export const getFacturaById = async (req, res) => {
     try {
-        const factura = await Factura.findOne({ id: req.params.id });
+        const factura = await Factura.findOne({ _id: req.params._id });
         if (!factura) {
             return res.status(404).json({ message: 'Factura no encontrado' });
         }
