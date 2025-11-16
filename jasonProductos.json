@@ -32,12 +32,6 @@
 "descripcion":"3D Helmet Virtual Reality VR Glasses For 5 To 7 Inch Smartphones 3D Glasses Support 0-800 Myopia VR Headset For Mobile Phone 240124",
 "cantidad":100},
 
-{"id":"00",
-"nombre":"Dany",
-"precio":3000,
-"imagen":"Danyel",
-"categoria":"Dany",
-"descripcion":"Dany",
-"cantidad":100}
+{"_id":"690fcd2856a023211bb56f3c","id":"00","nombre":"Dany","precio":1000,"imagen":"src/assets/Galaxy","categoria":"falso","descripcion":"sdfasdfsfd","__v":0,"cantidad":0},{"_id":"6913a52b30942ab5f8b63333","id":"11","nombre":"Dany","precio":3000,"imagen":"Dany","categoria":"Dany","descripcion":"Dany","cantidad":100,"__v":0},{"_id":"6913a7dc30942ab5f8b63338","id":"22","nombre":"Dany","precio":5555,"imagen":"/src/assets/vr.jpeg","categoria":"Dany","descripcion":"dfasfasdf ag","cantidad":100,"__v":0}
 
 ]
